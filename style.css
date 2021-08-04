@@ -1,0 +1,28 @@
+body{
+    width: 100%;
+    max-width: 500px;
+    margin: 100px auto;
+    text-align: center;
+    font-family: ita;
+}
+h2{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+input,
+select{
+    width: 250px;
+    height: 30px;
+    border: 2px solid rgb(217, 165, 233);
+    outline: none;
+}
+select{
+    width: 100px;
+    margin-left: 10px;
+    letter-spacing: 2px;
+}
+span{
+    color: rgb(238, 116, 45);
+    font-size: 2em;
+    font-weight: 900;
+}
