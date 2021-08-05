@@ -1,12 +1,16 @@
 
 const select = document.querySelectorAll('select');
 const input = document.querySelectorAll('input');
-const API_KEY ="https://api.exchangeratesapi.io/v1/latest?access_key=c23ffa411bb28c19e9aa0b8cb95c70a0 ";
+const API_KEY ="http://api.exchangeratesapi.io/v1/latest?access_key=c23ffa411bb28c19e9aa0b8cb95c70a0";
+
+// gh http://api.exchangeratesapi.io/v1/latest?access_key=c23ffa411bb28c19e9aa0b8cb95c70a0
+
 let html = '';
 
 async function currency(){
     const res = await fetch(API_KEY);
     const data = await res.json();
+    console.log(data);
     const arrKeys = Object.keys(data.rates);
     const rates = data.rates;
 
